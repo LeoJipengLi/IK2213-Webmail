@@ -1,0 +1,41 @@
+<!--This is the html file for the IK2213 assignment 1-->
+<!--Yuxin Cheng yuxin@kth.se-->
+<!--Daniel Abad dabad@kth.se-->
+<!--3.22.2013-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webmail of IK2213 Assignment 1</title>
+</head>
+
+<body>
+<form method="post">
+	<div style="width:120px; float:left">From:</div>
+	<div><input type="text" name="SenderAddress" /></div>
+	
+	<div style="width:120px; float:left">To:</div>
+	<div><input type="text" name="ReceiverAddress" /></div>
+	
+	<div style="width:120px; float:left">Subject:</div>
+	<div><input type="text" name=Subject /></div>
+	
+	<div style="width:120px; float:left">SMTP Server:</div>
+	<div><input type="text" name=SMTPServer /></div>
+	
+	<div style="width:120px; float:left">Message:</div>
+	<div> <textarea cols="50" rows="8" name=MailContent></textarea></div>
+	
+        <div style="width:120px; float:left">Delay time in seconds:</div>
+	<div><input type="text" name=DelayTime /></div>
+	
+        <input type="submit" value="Send" /><input type="reset" value="Reset">
+	
+</form>
+<form action="statuspage.html" method="get">
+<input type="submit" value="Status Page"/>
+
+</form>
+</body>
+
+</html>
